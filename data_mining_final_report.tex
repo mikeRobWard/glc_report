@@ -249,8 +249,7 @@ The second classification method I used in my methodology was random forests. Al
 
 \subsubsection{Deep Neural Network}
 
-The last classification method that I wanted to use in my experiment was a deep neural network, though I ran into several roadblocks while attempting to test this method. My intention was to use a convolutional neural network with the 
-
+The last classification method that I wanted to use in my experiment was a deep neural network, though I ran into several roadblocks while attempting to test this method. My intention was to use a neural network with the provided raster imagery to predict the species observations. The first issue I encountered was when trying to convert the rasters to numpy arrays and feeding them into a multi-layer perceptron classifier using Python's scikit-learn module. Unfortunately, as I learned, scikit-learn is not able to take advantage of GPU acceleration for additional processing power. The amount of satellite imagery provided by the competition totals to over 1,000 gigabytes, and scikit-learn was not anywhere near capable of processing this much data with my available hardware. My second route was to learn a new framework for neural networks that could take advantage of hardware acceleration - I found that PyTorch would be a reasonable fit for this. However, due to the steep learning curve of PyTorch and time-restrictions, I was not able to get a model up and running in time to include in this report. The Kaggle competition will be open for another month, so I hope to be able to gain a better understanding of PyTorch in that time and finish composing a neural network to train on my data. 
 
 \end{normalsize}
 
