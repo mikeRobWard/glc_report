@@ -1,0 +1,571 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{chzhen2021set}{article}{}
+      \name{author}{4}{}{%
+        {{hash=8b0752b7b0167d28213c7bde79425418}{%
+           family={Chzhen},
+           familyi={C\bibinitperiod},
+           given={Evgenii},
+           giveni={E\bibinitperiod}}}%
+        {{hash=9d6dfd296005514b7e7edf33cd316441}{%
+           family={Denis},
+           familyi={D\bibinitperiod},
+           given={Christophe},
+           giveni={C\bibinitperiod}}}%
+        {{hash=f9bf83d12e4ba36acb518c71f7eed795}{%
+           family={Hebiri},
+           familyi={H\bibinitperiod},
+           given={Mohamed},
+           giveni={M\bibinitperiod}}}%
+        {{hash=768152f6792774a0a026d5c359791816}{%
+           family={Lorieul},
+           familyi={L\bibinitperiod},
+           given={Titouan},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{a3b8804bb3caf528cb89dad717d73445}
+      \strng{fullhash}{3b7e04b74a9996e01f4e8b4c7a6b8985}
+      \strng{bibnamehash}{a3b8804bb3caf528cb89dad717d73445}
+      \strng{authorbibnamehash}{a3b8804bb3caf528cb89dad717d73445}
+      \strng{authornamehash}{a3b8804bb3caf528cb89dad717d73445}
+      \strng{authorfullhash}{3b7e04b74a9996e01f4e8b4c7a6b8985}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2102.12318}
+      \field{title}{Set-valued classification--overview via a unified framework}
+      \field{year}{2021}
+    \endentry
+    \entry{cutler2007random}{article}{}
+      \name{author}{7}{}{%
+        {{hash=8d7ce5ba20cefc9db5e52142ca35eada}{%
+           family={Cutler},
+           familyi={C\bibinitperiod},
+           given={D\bibnamedelima Richard},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=ed150ead387eb9744d3ffa4e7135ef78}{%
+           family={Edwards\bibnamedelima Jr},
+           familyi={E\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Thomas\bibnamedelima C},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=5a5cb08e142227f5ac593b7f86b0f8f7}{%
+           family={Beard},
+           familyi={B\bibinitperiod},
+           given={Karen\bibnamedelima H},
+           giveni={K\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=ea9492aa5759b3542d9fe2f1d62b3412}{%
+           family={Cutler},
+           familyi={C\bibinitperiod},
+           given={Adele},
+           giveni={A\bibinitperiod}}}%
+        {{hash=223d42b4efbfe137df8a97c7b46c1fa6}{%
+           family={Hess},
+           familyi={H\bibinitperiod},
+           given={Kyle\bibnamedelima T},
+           giveni={K\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=b910b8c11b32e1942c032d1e28850542}{%
+           family={Gibson},
+           familyi={G\bibinitperiod},
+           given={Jacob},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f85a4d0074527ee05131ebe35f68276a}{%
+           family={Lawler},
+           familyi={L\bibinitperiod},
+           given={Joshua\bibnamedelima J},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{153fd64ba709ca0af18825b995d3b305}
+      \strng{fullhash}{c62492bd30c136703d35ae432d7bd36d}
+      \strng{bibnamehash}{153fd64ba709ca0af18825b995d3b305}
+      \strng{authorbibnamehash}{153fd64ba709ca0af18825b995d3b305}
+      \strng{authornamehash}{153fd64ba709ca0af18825b995d3b305}
+      \strng{authorfullhash}{c62492bd30c136703d35ae432d7bd36d}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ecology}
+      \field{number}{11}
+      \field{title}{Random forests for classification in ecology}
+      \field{volume}{88}
+      \field{year}{2007}
+      \field{pages}{2783\bibrangedash 2792}
+      \range{pages}{10}
+    \endentry
+    \entry{deneu2018location}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=669f5eea477b6bb9b10b4274ce8d3735}{%
+           family={Deneu},
+           familyi={D\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=8950e51d51589d653667137efbd53851}{%
+           family={Servajean},
+           familyi={S\bibinitperiod},
+           given={Maximilien},
+           giveni={M\bibinitperiod}}}%
+        {{hash=de65df659940a78d3520027b894e951c}{%
+           family={Botella},
+           familyi={B\bibinitperiod},
+           given={Christophe},
+           giveni={C\bibinitperiod}}}%
+        {{hash=00a1863105df6fae815d632a91b43808}{%
+           family={Joly},
+           familyi={J\bibinitperiod},
+           given={Alexis},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{7888f3fedbbca2802916082ba5478b95}
+      \strng{fullhash}{b076b3796fe6f4d5578189dd9aebb193}
+      \strng{bibnamehash}{7888f3fedbbca2802916082ba5478b95}
+      \strng{authorbibnamehash}{7888f3fedbbca2802916082ba5478b95}
+      \strng{authornamehash}{7888f3fedbbca2802916082ba5478b95}
+      \strng{authorfullhash}{b076b3796fe6f4d5578189dd9aebb193}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Working Notes of CLEF 2018-Conference and Labs of the Evaluation Forum}
+      \field{title}{Location-based species recommendation using co-occurrences and environment-GeoLifeCLEF 2018 challenge}
+      \field{volume}{2125}
+      \field{year}{2018}
+      \true{nocite}
+    \endentry
+    \entry{franklin2010mapping}{book}{}
+      \name{author}{1}{}{%
+        {{hash=9c15b291550ec5d8aa5847c1fa663a6f}{%
+           family={Franklin},
+           familyi={F\bibinitperiod},
+           given={Janet},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{9c15b291550ec5d8aa5847c1fa663a6f}
+      \strng{fullhash}{9c15b291550ec5d8aa5847c1fa663a6f}
+      \strng{bibnamehash}{9c15b291550ec5d8aa5847c1fa663a6f}
+      \strng{authorbibnamehash}{9c15b291550ec5d8aa5847c1fa663a6f}
+      \strng{authornamehash}{9c15b291550ec5d8aa5847c1fa663a6f}
+      \strng{authorfullhash}{9c15b291550ec5d8aa5847c1fa663a6f}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Mapping species distributions: spatial inference and prediction}
+      \field{year}{2010}
+    \endentry
+    \entry{hengl2017soilgrids250m}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=be864637cd8b00d4737a3e20d64e43b5}{%
+           family={Hengl},
+           familyi={H\bibinitperiod},
+           given={Tomislav},
+           giveni={T\bibinitperiod}}}%
+        {{hash=05e04cc227df03222c8b9001c2f5f7cc}{%
+           family={Mendes\bibnamedelimb de\bibnamedelima Jesus},
+           familyi={M\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Jorge},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d326d5aed702158fda14a93963ffacd4}{%
+           family={Heuvelink},
+           familyi={H\bibinitperiod},
+           given={Gerard\bibnamedelima BM},
+           giveni={G\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=1eec73ccb5f0f655e39cadad13917138}{%
+           family={Ruiperez\bibnamedelima Gonzalez},
+           familyi={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod}}}%
+        {{hash=73d695130184535ead27634533c7b1a0}{%
+           family={Kilibarda},
+           familyi={K\bibinitperiod},
+           given={Milan},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0de4a4fb7a42a0df49b43004e8bb8de8}{%
+           family={Blagotić},
+           familyi={B\bibinitperiod},
+           given={Aleksandar},
+           giveni={A\bibinitperiod}}}%
+        {{hash=df6f9eadf038e535917470b56b047cf1}{%
+           family={Shangguan},
+           familyi={S\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=7399da7b4ddc8a296c76a674449379b1}{%
+           family={Wright},
+           familyi={W\bibinitperiod},
+           given={Marvin\bibnamedelima N},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=691a6501833511d2726e3ebbf602ca5c}{%
+           family={Geng},
+           familyi={G\bibinitperiod},
+           given={Xiaoyuan},
+           giveni={X\bibinitperiod}}}%
+        {{hash=16142c37b93740f14c1ddf93d5aa1d76}{%
+           family={Bauer-Marschallinger},
+           familyi={B\bibinithyphendelim M\bibinitperiod},
+           given={Bernhard},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science San Francisco, CA USA}%
+      }
+      \strng{namehash}{7128ef9c3b8cde40ccdf68a857ef2b16}
+      \strng{fullhash}{05bdf60355ec8aca8508747cd38ffe50}
+      \strng{bibnamehash}{7128ef9c3b8cde40ccdf68a857ef2b16}
+      \strng{authorbibnamehash}{7128ef9c3b8cde40ccdf68a857ef2b16}
+      \strng{authornamehash}{7128ef9c3b8cde40ccdf68a857ef2b16}
+      \strng{authorfullhash}{05bdf60355ec8aca8508747cd38ffe50}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PLoS one}
+      \field{number}{2}
+      \field{title}{SoilGrids250m: Global gridded soil information based on machine learning}
+      \field{volume}{12}
+      \field{year}{2017}
+      \field{pages}{e0169748}
+      \range{pages}{-1}
+    \endentry
+    \entry{hijmans2005very}{article}{}
+      \name{author}{5}{}{%
+        {{hash=9b0a2427b5a45d44474b8316d0d9aad7}{%
+           family={Hijmans},
+           familyi={H\bibinitperiod},
+           given={Robert\bibnamedelima J},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=4cf1a9a4255b8aecbed041be2b508e4c}{%
+           family={Cameron},
+           familyi={C\bibinitperiod},
+           given={Susan\bibnamedelima E},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=3fcae43ab3b85dee86e8347de22e43e2}{%
+           family={Parra},
+           familyi={P\bibinitperiod},
+           given={Juan\bibnamedelima L},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=05772212df1aa70ea5ce0207ee7b0f8a}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Peter\bibnamedelima G},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=21d4cd751f4fa777c6bc253a046d9dec}{%
+           family={Jarvis},
+           familyi={J\bibinitperiod},
+           given={Andy},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{0e5745af77e74ef9c6ef248ec9bec5c9}
+      \strng{fullhash}{34149f2ddd3f16d2c7b8d744e93c4121}
+      \strng{bibnamehash}{0e5745af77e74ef9c6ef248ec9bec5c9}
+      \strng{authorbibnamehash}{0e5745af77e74ef9c6ef248ec9bec5c9}
+      \strng{authornamehash}{0e5745af77e74ef9c6ef248ec9bec5c9}
+      \strng{authorfullhash}{34149f2ddd3f16d2c7b8d744e93c4121}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Climatology: A Journal of the Royal Meteorological Society}
+      \field{number}{15}
+      \field{title}{Very high resolution interpolated climate surfaces for global land areas}
+      \field{volume}{25}
+      \field{year}{2005}
+      \field{pages}{1965\bibrangedash 1978}
+      \range{pages}{14}
+    \endentry
+    \entry{homer2015completion}{article}{}
+      \name{author}{10}{}{%
+        {{hash=aa35e2fc65c166865d623ae9f88175d6}{%
+           family={Homer},
+           familyi={H\bibinitperiod},
+           given={Collin},
+           giveni={C\bibinitperiod}}}%
+        {{hash=28b1d3e5218f65af23db4f8129a50421}{%
+           family={Dewitz},
+           familyi={D\bibinitperiod},
+           given={Jon},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c00c5566a318bb826525dcbc4d2d883b}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Limin},
+           giveni={L\bibinitperiod}}}%
+        {{hash=0e853b463e09222532dcd506d6a532e9}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Suming},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b2230bfa132d99793bafb3b8011316fa}{%
+           family={Danielson},
+           familyi={D\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c81a815f1370117ec657192ad0b7a9f2}{%
+           family={Xian},
+           familyi={X\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+        {{hash=4d68680c3d46104a65dd3b3811a52fe4}{%
+           family={Coulston},
+           familyi={C\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c4fc8552e3ebdd16544554401f98e00d}{%
+           family={Herold},
+           familyi={H\bibinitperiod},
+           given={Nathaniel},
+           giveni={N\bibinitperiod}}}%
+        {{hash=0c6346934d37647ab0284c7795a60b99}{%
+           family={Wickham},
+           familyi={W\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+        {{hash=894e5e43261b73a80ae8556d348c709e}{%
+           family={Megown},
+           familyi={M\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {American Society for Photogrammetry}%
+        {Remote Sensing}%
+      }
+      \strng{namehash}{007fcd2cc900e53ef977edafd504daa0}
+      \strng{fullhash}{2b6e4132206e7d7e9de2b19648810931}
+      \strng{bibnamehash}{007fcd2cc900e53ef977edafd504daa0}
+      \strng{authorbibnamehash}{007fcd2cc900e53ef977edafd504daa0}
+      \strng{authornamehash}{007fcd2cc900e53ef977edafd504daa0}
+      \strng{authorfullhash}{2b6e4132206e7d7e9de2b19648810931}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Photogrammetric Engineering \& Remote Sensing}
+      \field{number}{5}
+      \field{title}{Completion of the 2011 National Land Cover Database for the conterminous United States--representing a decade of land cover change information}
+      \field{volume}{81}
+      \field{year}{2015}
+      \field{pages}{345\bibrangedash 354}
+      \range{pages}{10}
+    \endentry
+    \entry{lorieul2021overview}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=768152f6792774a0a026d5c359791816}{%
+           family={Lorieul},
+           familyi={L\bibinitperiod},
+           given={Titouan},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e41b1068e6a30d022b8efcf3af76cfd2}{%
+           family={Cole},
+           familyi={C\bibinitperiod},
+           given={Elijah},
+           giveni={E\bibinitperiod}}}%
+        {{hash=669f5eea477b6bb9b10b4274ce8d3735}{%
+           family={Deneu},
+           familyi={D\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=8950e51d51589d653667137efbd53851}{%
+           family={Servajean},
+           familyi={S\bibinitperiod},
+           given={Maximilien},
+           giveni={M\bibinitperiod}}}%
+        {{hash=bc79b5705916779c8ebc040ca45049a8}{%
+           family={Bonnet},
+           familyi={B\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+        {{hash=00a1863105df6fae815d632a91b43808}{%
+           family={Joly},
+           familyi={J\bibinitperiod},
+           given={Alexis},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{6560ccec6d3cd725bdb1a83c1aba3926}
+      \strng{fullhash}{c9a32a6f27c91d512552796cf005230e}
+      \strng{bibnamehash}{6560ccec6d3cd725bdb1a83c1aba3926}
+      \strng{authorbibnamehash}{6560ccec6d3cd725bdb1a83c1aba3926}
+      \strng{authornamehash}{6560ccec6d3cd725bdb1a83c1aba3926}
+      \strng{authorfullhash}{c9a32a6f27c91d512552796cf005230e}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Working Notes of CLEF 2021-Conference and Labs of the Evaluation Forum}
+      \field{title}{Overview of GeoLifeCLEF 2021: Predicting species distribution from 2 million remote sensing images}
+      \field{volume}{2936}
+      \field{year}{2021}
+      \field{pages}{1451\bibrangedash 1462}
+      \range{pages}{12}
+    \endentry
+    \entry{mi2017choose}{article}{}
+      \name{author}{5}{}{%
+        {{hash=0f81c5244d4a498c4763f0f48c53d43c}{%
+           family={Mi},
+           familyi={M\bibinitperiod},
+           given={Chunrong},
+           giveni={C\bibinitperiod}}}%
+        {{hash=de1bc37e0190ecf013639e8f2a2b7bb8}{%
+           family={Huettmann},
+           familyi={H\bibinitperiod},
+           given={Falk},
+           giveni={F\bibinitperiod}}}%
+        {{hash=6901d95f5e2549a689a6c1bc9f4569e0}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Yumin},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=6911c6349b26e4c177dc9d8d20770ad2}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Xuesong},
+           giveni={X\bibinitperiod}}}%
+        {{hash=844fdc98609ca6ed859a83aef18f37f0}{%
+           family={Wen},
+           familyi={W\bibinitperiod},
+           given={Lijia},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {PeerJ Inc.}%
+      }
+      \strng{namehash}{8e9f2ba7303a4a11ccbae1052dd52638}
+      \strng{fullhash}{43020bcbbcec239c8f4447884769d80c}
+      \strng{bibnamehash}{8e9f2ba7303a4a11ccbae1052dd52638}
+      \strng{authorbibnamehash}{8e9f2ba7303a4a11ccbae1052dd52638}
+      \strng{authornamehash}{8e9f2ba7303a4a11ccbae1052dd52638}
+      \strng{authorfullhash}{43020bcbbcec239c8f4447884769d80c}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PeerJ}
+      \field{title}{Why choose Random Forest to predict rare species distribution with few samples in large undersampled areas? Three Asian crane species models provide supporting evidence}
+      \field{volume}{5}
+      \field{year}{2017}
+      \field{pages}{e2849}
+      \range{pages}{-1}
+    \endentry
+    \entry{pinto2021predicting}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c8a9877b91fa8bf0e08ad425a8ee0c58}{%
+           family={Pinto-Ledezma},
+           familyi={P\bibinithyphendelim L\bibinitperiod},
+           given={Jesús\bibnamedelima N},
+           giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=a90dd87c17cf666a967756ac228e2596}{%
+           family={Cavender-Bares},
+           familyi={C\bibinithyphendelim B\bibinitperiod},
+           given={Jeannine},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{6ad2298ca54356c316970fd39de9535e}
+      \strng{fullhash}{6ad2298ca54356c316970fd39de9535e}
+      \strng{bibnamehash}{6ad2298ca54356c316970fd39de9535e}
+      \strng{authorbibnamehash}{6ad2298ca54356c316970fd39de9535e}
+      \strng{authornamehash}{6ad2298ca54356c316970fd39de9535e}
+      \strng{authorfullhash}{6ad2298ca54356c316970fd39de9535e}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Scientific Reports}
+      \field{number}{1}
+      \field{title}{Predicting species distributions and community composition using satellite remote sensing predictors}
+      \field{volume}{11}
+      \field{year}{2021}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
+    \endentry
+    \entry{seneviratne2021contrastive}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c93d337546f82986c8b364522cee2d9c}{%
+           family={Seneviratne},
+           familyi={S\bibinitperiod},
+           given={Sachith},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{c93d337546f82986c8b364522cee2d9c}
+      \strng{fullhash}{c93d337546f82986c8b364522cee2d9c}
+      \strng{bibnamehash}{c93d337546f82986c8b364522cee2d9c}
+      \strng{authorbibnamehash}{c93d337546f82986c8b364522cee2d9c}
+      \strng{authornamehash}{c93d337546f82986c8b364522cee2d9c}
+      \strng{authorfullhash}{c93d337546f82986c8b364522cee2d9c}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{CLEF working notes}
+      \field{title}{Contrastive representation learning for natural world imagery: Habitat prediction for 30,000 species}
+      \field{year}{2021}
+      \true{nocite}
+    \endentry
+    \entry{8328619}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=112faefb37293f52cd92c3bb36fcc08b}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=fb8d9c08414e4767696f84f7f34e86be}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Sen},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{8780d2bac0274c30acef54b56c7d7722}
+      \strng{fullhash}{8780d2bac0274c30acef54b56c7d7722}
+      \strng{bibnamehash}{8780d2bac0274c30acef54b56c7d7722}
+      \strng{authorbibnamehash}{8780d2bac0274c30acef54b56c7d7722}
+      \strng{authornamehash}{8780d2bac0274c30acef54b56c7d7722}
+      \strng{authorfullhash}{8780d2bac0274c30acef54b56c7d7722}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 International Conference on Industrial Informatics - Computing Technology, Intelligent Technology, Industrial Information Integration (ICIICII)}
+      \field{title}{A Review of Machine Learning Based Species' Distribution Modelling}
+      \field{year}{2017}
+      \field{pages}{199\bibrangedash 206}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/ICIICII.2017.76
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
