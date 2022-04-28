@@ -1,15 +1,15 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'data_mining_final_report.blg'
-[118] biber-MSWIN64:340> INFO - === 
-[153] Biber.pm:415> INFO - Reading 'data_mining_final_report.bcf'
-[273] Biber.pm:949> INFO - Using all citekeys in bib section 0
-[288] Biber.pm:4340> INFO - Processing section 0
-[300] Biber.pm:4531> INFO - Looking for bibtex format file 'planrefs.bib' for section 0
-[347] bibtex.pm:1689> INFO - LaTeX decoding ...
-[367] bibtex.pm:1494> INFO - Found BibTeX data source 'planrefs.bib'
-[485] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[486] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[486] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[486] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[500] bbl.pm:654> INFO - Writing 'data_mining_final_report.bbl' with encoding 'UTF-8'
-[510] bbl.pm:757> INFO - Output to data_mining_final_report.bbl
+[117] biber-MSWIN64:340> INFO - === 
+[157] Biber.pm:415> INFO - Reading 'data_mining_final_report.bcf'
+[284] Biber.pm:949> INFO - Using all citekeys in bib section 0
+[300] Biber.pm:4340> INFO - Processing section 0
+[311] Biber.pm:4531> INFO - Looking for bibtex format file 'planrefs.bib' for section 0
+[361] bibtex.pm:1689> INFO - LaTeX decoding ...
+[383] bibtex.pm:1494> INFO - Found BibTeX data source 'planrefs.bib'
+[509] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[509] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[509] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[509] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[523] bbl.pm:654> INFO - Writing 'data_mining_final_report.bbl' with encoding 'UTF-8'
+[532] bbl.pm:757> INFO - Output to data_mining_final_report.bbl
