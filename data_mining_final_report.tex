@@ -241,11 +241,16 @@ In order to have a baseline to compare my model results to, besides other compet
 
 \subsubsection{KNN}
 
-One machine learning classifier that I hadn't seen come up frequently during my review of related literature is the k-nearest neighbors classifier. I decided 
+One machine learning classifier that I hadn't seen come up frequently during my review of related literature is the k-nearest neighbors classifier. I decided to give this classifier a try to see how it would compare specifically to random forests on this data. While testing KNN, I iteratively increased K until it reached diminishing returns on the top 30 error rate. After reaching the rate of diminishing returns, I used grid search with 5 fold cross validation to tune the KNN hyper parameters. I specifically tested different distance metrics, prediction weights, and the KNN algorithm used to compute nearest neighbors (KDTree, BallTree, and brute force search). I ran each of the KNN models using all 27 environmental variables as features.
 
 \subsubsection{Random Forests}
 
+The second classification method I used in my methodology was random forests. All of the literature I reviewed pointed to random forests as the best technique for species distribution modeling, especially when working with rare and sparse species. For this method I also used grid search with 5 fold cross validation to tune the hyper parameters of the model and test multiple iterations. The specific parameters that I tested were differing numbers of trees per forest, the splitting criterion used (gini vs. entropy), and the maximum tree depth allowed. I also ran the random forest models using all 27 environmental variables as features.
+
 \subsubsection{Deep Neural Network}
+
+The last classification method that I wanted to use in my experiment was a deep neural network, though I ran into several roadblocks while attempting to test this method. My intention was to use a convolutional neural network with the 
+
 
 \end{normalsize}
 
@@ -255,6 +260,12 @@ One machine learning classifier that I hadn't seen come up frequently during my 
 \begin{normalsize}
 
 \subsection{Results}
+
+\subsubsection{KNN Results}
+
+\subsubsection{Random Forests Results}
+
+\subsubsection{Comparison}
 
 \subsection{Limitations}
 
