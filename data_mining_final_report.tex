@@ -47,7 +47,7 @@ This paper
 
 \subsection{Background}
 
-Distribution and diversity of plant and animal species have both always varied in space and time. However, the rise in human population and activities in the last few centuries have drastically impacted the speed and magnitude of change in species distribution and diversity \cite{pinto2021predicting}. Understanding where different species live is crucial to making well-informed conservation decisions. The rapid change in distribution and diversity of species has made the process of conservation decision making harder, since species location data quickly loses its value over time. While humans have caused major disruptions in the distribution and diversity of species, we also generate millions of geo-coded species observations every year through the work of citizen science projects, which can be used to build species distribution models (commonly referred to as SDM) \cite{lorieul2021overview}.
+Distribution and diversity of plant and animal species have both always varied in space and time. However, the rise in human population and activities in the last few centuries have drastically impacted the speed and magnitude of change in species distribution and diversity \cite{pinto2021predicting}. Understanding where different species live is crucial to making well-informed conservation decisions. The rapid change in distribution and diversity of species has made the process of conservation decision making harder, since species location data quickly loses its value over time. While humans have caused major disruptions in the distribution and diversity of species, we also generate millions of geo-referenced species observations every year through the work of citizen science projects, which can be used to build species distribution models (commonly referred to as SDM) \cite{lorieul2021overview}.
 
 	The aim of this project is to address the need for predictive species distributions with models based on geo-localized observations of plant and animal species from France and the United States. The task is to return a set of 30 candidate species that should contain the true observed species when provided with a GPS position and its associated features. This work is relevant to the aforementioned fields of biodiversity management and conservation. Specifically, this type of SDM could allow for biodiversity inventories via the development of location-based recommendation services, and accelerate the recording and validation of species observations for the purposes of creating of large-scale and high-quality data sets. Ultimately, the desire is to be able to predict what types of species might be found at a new location, which can be used for the purpose of conservation decision-making.
 
@@ -210,6 +210,8 @@ One of the underlying issues of SDMs has to do with generalizing species distrib
 
 Chunrong Mi et al. quantify which models out of stochastic gradient bossting, random forest, CART, and MaxEnt, perform best on three separate cases of rare species distribution in China (Hooded Crane with 33 observations, White Naped Crane with 40 observations, and Black Necked Crane with 75 observations) \cite{mi2017choose}. This study was most relevant to my methodology out of the other literature found due to both the addressing of rare species distribution, and the usage of WorldClim environmental vectors for the predictive variables. Chunrong Mi et al. used WorldClim variables bio\_1 through bio\_15 in addition to several variables obtained from naturalearthdata.com which provides distance to relevant land and water features for their predictive variables. This was relevant, as I am using WorldClim variables bio\_1 through bio\_19 in my models.
 
+The authors found that random forests had the best performance in predicting the distribution of each of the three rare crane species by a significant amount, using area under ROC curve and the true skill statistic as accuracy metrics. The authors also comment that the application of a few observations to project a distribution area beyond its sampled range is a large challenge that hasn't been attempted until recently in ecology and SDM. Because of this, they recommend that modelers should assess their model performance on not just an evaluation metric (such as AUC or TSS), but also combine the use of visualization and expert domain knowledge to assess how the predicted species distribution map looks and compares to real data \cite{mi2017choose}.
+
 \end{normalsize}
 
 \section{Methodology}
@@ -217,8 +219,33 @@ Chunrong Mi et al. quantify which models out of stochastic gradient bossting, ra
 
 \begin{normalsize}
 
-methods here
+\subsection{Missing Data}
 
+Roughly 3.6\% of observations are missing data for the soil variables sourced from SoilGrids, and roughly 2.6\% of observations are missing data for the geo-climatic variables sourced from WorldClim. Before making any decisions on how to handle the missing data I plotted a missingness graph to see how much data was missing, and whether there were correlations in the missing data.
+
+\begin{figure}[H]
+\caption{Missingness Plot}
+\centering
+\includegraphics[width=0.9\textwidth]{missingno}
+\end{figure}
+
+The missingness plot above shows which variables are missing data on the x-axis, and shows the position in the data set in which they are missing on the y-axis. If a line runs straight across the x-axis, that means that there is a correlation in the missing data, and it should not be considered missing at random. In this case, you can see that all of the missing data is either correlated to WorldClim or SoilGrid - if an observation is missing one WorldClim variable it is missing all WorldClim variables. Likewise, if an observation is missing one SoilGrid variable, it is missing all other SoilGrid variables. A small portion of missing data (roughly 1\%) is 100\% correlated, meaning that it is missing all variables. 
+
+Since the missing data is missing not at random and many minority classes have less than 10 observations, it is not appropriate to drop the missing rows of data in this case. I decided to test my models with two different methods of imputation. The first method of imputation I used was a form of simple imputation, where the mean value of a variable is imputed for that variable's missing values. The second form of imputation I tested was k-nearest neighbors imputation, where each missing value is imputed using the mean value of that observation's k-nearest neighbors. I used a value of 20 for k for imputation.
+
+\subsection{Baseline}
+
+In order to have a baseline to compare my model results to, besides other competitors in the Kaggle competition, I went with a relatively simple baseline that makes sense for the dataset that I am working with. As a reminder, the top-30 error rate metric requires 30 species to be predicted for each observation in the dataset. I created a baseline that just estimates the top-30 most present species in the dataset for each observation. This baseline has a top-30 error rate of 93.5\%.
+
+\subsection{Modeling}
+
+\subsubsection{KNN}
+
+One machine learning classifier that I hadn't seen come up frequently during my review of related literature is the k-nearest neighbors classifier. I decided 
+
+\subsubsection{Random Forests}
+
+\subsubsection{Deep Neural Network}
 
 \end{normalsize}
 
