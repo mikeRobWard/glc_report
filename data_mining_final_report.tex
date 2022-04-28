@@ -37,7 +37,7 @@
 
 \begin{normalsize}
 
-This paper 
+Understanding the spatial distribution of plant and animals species is crucial to making well-informed conservation decisions. Citizen science efforts in recent years have generated millions of geo-referenced species observations, which can be used to build complex species distribution models. Many different approaches have been taken in modeling species distributions including statistical, machine learning, and GIS-based approaches. This paper reviews the current pool of literature that discusses the application of machine learning based SDM techniques, and applies these techniques to a large dataset of species observations taken from the United States and France. This application of SDM on a large scale dataset with thousands of species is relatively new, and has not yet been able to achieve satisfactory accuracy. My results show that machine learning techniques hold promising but limited capabilities when applied to large SDM datasets containing many species with few observations.
 
 \end{normalsize}
 \newpage
@@ -55,7 +55,7 @@ Distribution and diversity of plant and animal species have both always varied i
 
 This project has an associated \href{https://www.kaggle.com/c/geolifeclef-2022-lifeclef-2022-fgvc9/overview}{Kaggle competition}. The competition is held jointly as part of the \href{https://www.imageclef.org/LifeCLEF2022}{LifeCLEF 2022 lab} and \href{https://sites.google.com/view/fgvc9}{FGVC9 workshop}. While this has been an ongoing yearly competition since 2018, there is still considerable room for improvement for this problem. The evaluation metric for this problem is the top-30 error rate, which will be discussed further in section 2.3. I am submitting my work on this project to the Kaggle competition, so I will be evaluating my models according to the top-30 error rate metric that will be used in the competition to evaluate model performance.
 
-The winning solution in 2021 for GeoLifeClef still had a very high top-30 error rate, near 75\%, and was not able to make use of all of the covariate data available. According to an overview of the 2021 competition results, the main challenges associated with this problem have to do with properly aggregating the different covariates, and determining how much complementary or redundant information is contained in the high resolution patches compared to the ones captured from the bioclimatic and soil variables \cite{lorieul2021overview}. I intend to survey current and past research on species prediction to inform my testing of multiple different models that attempt to solve this problem. 
+The winning solution in 2021 for GeoLifeClef still had a high top-30 error rate, near 75\%, and was not able to make use of all of the covariate data available. According to an overview of the 2021 competition results, the main challenges associated with this problem have to do with properly aggregating the different covariates, and determining how much complementary or redundant information is contained in the high resolution patches compared to the ones captured from the bioclimatic and soil variables \cite{lorieul2021overview}. I intend to survey current and past research on species prediction to inform my testing of multiple different models that attempt to solve this problem. 
 
 \subsection{Data Description and Visualization}
 

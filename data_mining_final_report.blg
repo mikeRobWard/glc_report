@@ -1,15 +1,15 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'data_mining_final_report.blg'
-[116] biber-MSWIN64:340> INFO - === 
+[113] biber-MSWIN64:340> INFO - === 
 [153] Biber.pm:415> INFO - Reading 'data_mining_final_report.bcf'
-[275] Biber.pm:949> INFO - Using all citekeys in bib section 0
-[291] Biber.pm:4340> INFO - Processing section 0
-[303] Biber.pm:4531> INFO - Looking for bibtex format file 'planrefs.bib' for section 0
-[353] bibtex.pm:1689> INFO - LaTeX decoding ...
-[378] bibtex.pm:1494> INFO - Found BibTeX data source 'planrefs.bib'
-[500] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[500] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[500] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[500] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[513] bbl.pm:654> INFO - Writing 'data_mining_final_report.bbl' with encoding 'UTF-8'
-[523] bbl.pm:757> INFO - Output to data_mining_final_report.bbl
+[284] Biber.pm:949> INFO - Using all citekeys in bib section 0
+[301] Biber.pm:4340> INFO - Processing section 0
+[314] Biber.pm:4531> INFO - Looking for bibtex format file 'planrefs.bib' for section 0
+[366] bibtex.pm:1689> INFO - LaTeX decoding ...
+[385] bibtex.pm:1494> INFO - Found BibTeX data source 'planrefs.bib'
+[503] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[504] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[504] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[504] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[517] bbl.pm:654> INFO - Writing 'data_mining_final_report.bbl' with encoding 'UTF-8'
+[526] bbl.pm:757> INFO - Output to data_mining_final_report.bbl
