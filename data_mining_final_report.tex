@@ -5,6 +5,8 @@
 \usepackage{amssymb}
 \usepackage{hyperref}
 \usepackage{algorithm}
+\usepackage{subfig}
+\usepackage{float}
 \usepackage{algorithmic}
 \graphicspath{{./images/}}
 \usepackage{mathtools}
@@ -59,50 +61,25 @@ The winning solution in 2021 for GeoLifeClef still had a very high top-30 error 
 
 \subsubsection{Observations}
 
-The dataset contains roughly 1.6 million observations of plant and animal species. There are about 17,000 species in the dataset, 9,000 of which are plant species, while the other 8,000 are animal species. Each observation contains the species name and the gps coordiantes where it was observed. Each observation is also paired with a set of covariates which contain characteristics of the surrounding landscape and environment. The covariates are in tabular, .TIFF, .JPEG, and .GeoTIFF format, and are a combination of high resolution remote sensing imagery, land cover data, altitude, as well as low-resolution climate and soil variables. The observations in this dataset are heavily imbalanced. As seen in Figure 1, the minimum number of observations per class is 3, while the max number of observations per class is 6,701. Additionally shown below in Figure 2 is a graph illustrating the imbalance on a logarithmic scale to emphasize how many classes can be considered as minority classes in this dataset. Over 30\% of the 17,037 classes have just 10 observations or less, out of the roughly 1.6 million total observations.
-
-\begin{figure}[H]
-\caption{Dataset Metrics}
-\centering
-\setlength{\tabcolsep}{0.5em} % for the horizontal padding
-{\renewcommand{\arraystretch}{1.2}% for the vertical padding
-\begin{tabular}{ |l|r| }
-\hline
- Number of Classes (Unique Species) & 17,037 \\
- \hline
- Number of Observations (Training) & 1,627,475 \\  
- \hline
- Number of Observations (Validation) & 40,080 \\
- \hline
- Number of Observations (Testing) & 36,421 \\
- \hline
- Max Number of Observations per Class & 6,701 \\
- \hline
- Min Number of Observations per Class & 3 \\
- \hline
-\end{tabular}
-}
-\end{figure}
+The dataset contains roughly 1.6 million observations of plant and animal species. There are about 17,000 species in the dataset, 9,000 of which are plant species, while the other 8,000 are animal species. Each observation contains the species name and the gps coordiantes where it was observed. Each observation is also paired with a set of covariates which contain characteristics of the surrounding landscape and environment. The covariates are in tabular, .TIFF, .JPEG, and .GeoTIFF format, and are a combination of high resolution remote sensing imagery, land cover data, altitude, as well as low-resolution climate and soil variables. The observations in this dataset are heavily imbalanced. The minimum number of observations per class is 3, while the max number of observations per class is 6,701. Shown below in Figure 1 is a graph illustrating the imbalance on a logarithmic scale to emphasize how many classes can be considered as minority classes in this dataset. Over 30\% of the 17,037 classes have just 10 observations or less, out of the roughly 1.6 million total observations.
 
 \begin{figure}[H]
 \caption{observation distribution}
 \centering
-\includegraphics[width=0.8\textwidth]{observations}
+\includegraphics[width=0.5\textwidth]{observations}
 \end{figure}
 
 The observations in this data set have been recorded both from the United States and from France. Shown below are the spatial distributions of observations in each country.
 
-\begin{figure}[H]
-\caption{US spatial distribution}
-\centering
-\includegraphics[width=0.7\textwidth]{us_dist}
+\begin{figure}[H]%
+    \centering
+    \subfloat[\centering US distribution]{{\includegraphics[width=0.5\textwidth]{us_dist} }}%
+    \qquad
+    \subfloat[\centering FR Distribution]{{\includegraphics[width=0.4\textwidth]{fr_dist} }}%
+    \caption{Spatial Distribution of Observations}%
+    \label{fig:Spatial Distribution}%
 \end{figure}
 
-\begin{figure}[H]
-\caption{FR spatial distribution}
-\centering
-\includegraphics[width=0.7\textwidth]{fr_dist}
-\end{figure}
 
 The train/test split for the data has already been determined by the competition, and uses a spatial block holdout procedure to split the data. The reasoning for using a spatial block holdout is to limit the effects of spatial auto-correlation on the data. The way this splitting procedure works is by assigning observations to a grid of 5km by 5km quadrants, of which 2.5\% are randomly sampled to create the test set, another 2.5\% randomly sampled to create the validation set, and the remaining are used for the training set. The validation set is created using the same spatial block holdout procedure \cite{lorieul2021overview}.
 
@@ -113,6 +90,7 @@ The main group of data provided by GeoLifeClef is made up of environmental vecto
 \begin{figure}[H]
 \caption{Environmental Vectors}
 \centering
+\scriptsize
 \begin{tabular}{ |l|l| }
 \hline
 \multicolumn{2}{|c|}{Bio-Climatic Variables (WorldClim) \cite{hijmans2005very}}\\
@@ -157,13 +135,7 @@ bldfie & Bulk density in kg/m3 at 15cm depth \\
 
 \subsubsection{Satellite Imagery}
 
-Each observation in the dataset has 4 associated high resolution satellite images, one covering the rgb spectrum, one covering the near infrared spectrum (NIR), one with altitude measurements, and one with land cover classifications. Each image are a spatial resolution of 1 meter per pixel, and are 256 x 256 pixels (256 meters x 256 meters). Each image is centered on it's associated observation. The United States RGB and NIR images were sourced from the 2009 to 2011 cycle of the National Agriculture Imagery Program (NAIP), while the French RGB and NIR images are sourced from the BD-ORTH 2.0 and ORTHO-HR 1.0 databases from the Institut national de l'information géographique et forestière. The United States land cover imagery that is used in this dataset is sourced from the National Land Cover Database, and the French land cover imagery is sourced from the Centre d'Etudes Spatiales de la Biosphère \cite{homer2015completion}. The elevation imagery is sourced from the NASA Shuttle Radar Topography Mission for both the US and French observations. Below is an example of the satellite raster imagery available for an observation.
-
-\begin{figure}[H]
-\caption{Satellite Raster Imagery}
-\centering
-\includegraphics[width=1\textwidth]{raster}
-\end{figure}
+Each observation in the dataset has 4 associated high resolution satellite images, one covering the rgb spectrum, one covering the near infrared spectrum (NIR), one with altitude measurements, and one with land cover classifications. Each image are a spatial resolution of 1 meter per pixel, and are 256 x 256 pixels (256 meters x 256 meters). Each image is centered on it's associated observation. The United States RGB and NIR images were sourced from the 2009 to 2011 cycle of the National Agriculture Imagery Program (NAIP), while the French RGB and NIR images are sourced from the BD-ORTH 2.0 and ORTHO-HR 1.0 databases from the Institut national de l'information géographique et forestière. The United States land cover imagery that is used in this dataset is sourced from the National Land Cover Database, and the French land cover imagery is sourced from the Centre d'Etudes Spatiales de la Biosphère \cite{homer2015completion}. The elevation imagery is sourced from the NASA Shuttle Radar Topography Mission for both the US and French observations.
 
 \subsection{Accuracy Evaluation}
 
@@ -223,15 +195,15 @@ The authors found that random forests had the best performance in predicting the
 
 Roughly 3.6\% of observations are missing data for the soil variables sourced from SoilGrids, and roughly 2.6\% of observations are missing data for the geo-climatic variables sourced from WorldClim. Before making any decisions on how to handle the missing data I plotted a missingness graph to see how much data was missing, and whether there were correlations in the missing data.
 
+The missingness plot below shows which variables are missing data on the x-axis, and shows the position in the data set in which they are missing on the y-axis. If a line runs straight across the x-axis, that means that there is a correlation in the missing data, and it should not be considered missing at random. In this case, you can see that all of the missing data is either correlated to WorldClim or SoilGrid - if an observation is missing one WorldClim variable it is missing all WorldClim variables. Likewise, if an observation is missing one SoilGrid variable, it is missing all other SoilGrid variables. A small portion of missing data (roughly 1\%) is 100\% correlated, meaning that it is missing all variables.
+
 \begin{figure}[H]
 \caption{Missingness Plot}
 \centering
 \includegraphics[width=0.9\textwidth]{missingno}
 \end{figure}
 
-The missingness plot above shows which variables are missing data on the x-axis, and shows the position in the data set in which they are missing on the y-axis. If a line runs straight across the x-axis, that means that there is a correlation in the missing data, and it should not be considered missing at random. In this case, you can see that all of the missing data is either correlated to WorldClim or SoilGrid - if an observation is missing one WorldClim variable it is missing all WorldClim variables. Likewise, if an observation is missing one SoilGrid variable, it is missing all other SoilGrid variables. A small portion of missing data (roughly 1\%) is 100\% correlated, meaning that it is missing all variables. 
-
-Since the missing data is missing not at random and many minority classes have less than 10 observations, it is not appropriate to drop the missing rows of data in this case. I decided to test my models with two different methods of imputation. The first method of imputation I used was a form of simple imputation, where the mean value of a variable is imputed for that variable's missing values. The second form of imputation I tested was k-nearest neighbors imputation, where each missing value is imputed using the mean value of that observation's k-nearest neighbors. I used a value of 20 for k for imputation.
+Since the missing data is missing not at random and many minority classes have less than 10 observations, it is not appropriate to drop the missing rows of data in this case. I decided to test my models with two different methods of imputation. The first method of imputation I used was a form of simple imputation, where the mean value of a variable is imputed for that variable's missing values. The second form of imputation I tested was k-nearest neighbors imputation, where each missing value is imputed using the mean value of that observation's k-nearest neighbors. I used a value of 20 for k for knn imputation.
 
 \subsection{Baseline}
 
@@ -241,11 +213,11 @@ In order to have a baseline to compare my model results to, besides other compet
 
 \subsubsection{KNN}
 
-One machine learning classifier that I hadn't seen come up frequently during my review of related literature is the k-nearest neighbors classifier. I decided to give this classifier a try to see how it would compare specifically to random forests on this data. While testing KNN, I iteratively increased K until it reached diminishing returns on the top 30 error rate. After reaching the rate of diminishing returns, I used grid search with 5 fold cross validation to tune the KNN hyper parameters. I specifically tested different distance metrics, prediction weights, and the KNN algorithm used to compute nearest neighbors (KDTree, BallTree, and brute force search). I ran each of the KNN models using all 27 environmental variables as features.
+One machine learning classifier that I hadn't seen come up frequently during my review of related literature is the k-nearest neighbors classifier. I decided to give this classifier a try to see how it would compare specifically to random forests on this data. While testing KNN, I iteratively increased K until it reached diminishing returns on the top 30 error rate. After reaching the rate of diminishing returns, I used grid search with 5 fold cross validation to tune the KNN hyper parameters. I found the optimal k-value to be 35 for this data. After finding an optimal k-value, I specifically tested different distance metrics, prediction weights, and the KNN algorithm used to compute nearest neighbors (KDTree, BallTree, and brute force search). I found from hyper parameter tuning that for this model, minkowski distance, uniform distance weighting, and the BallTree algorithm were the best fitting parameters. After tuning hyper parameters, I tested the model using several variations of the dataset. I tested it using simple imputation for missing features vs. knn imputation, and using normalized vs. non-normalized features. I ran each of the KNN models using all 27 environmental variables as features.
 
 \subsubsection{Random Forests}
 
-The second classification method I used in my methodology was random forests. All of the literature I reviewed pointed to random forests as the best technique for species distribution modeling, especially when working with rare and sparse species. For this method I also used grid search with 5 fold cross validation to tune the hyper parameters of the model and test multiple iterations. The specific parameters that I tested were differing numbers of trees per forest, the splitting criterion used (gini vs. entropy), and the maximum tree depth allowed. I also ran the random forest models using all 27 environmental variables as features.
+The second classification method I used in my methodology was random forests. All of the literature I reviewed pointed to random forests as the best technique for species distribution modeling, especially when working with rare and sparse species. For this method I also used grid search with 5 fold cross validation to tune the hyper parameters of the model and test multiple iterations. The specific parameters that I tested were differing numbers of trees per forest, the splitting criterion used (Gini vs. entropy), and the maximum tree depth allowed. I found from this testing that the best parameters for my model are random forests of 80 trees, a max tree depth of 16, and the use of Gini impurity instead of entropy for splitting. After tuning the hyper parameters of the model, I tested the model with several variations of the training / testing data. I tested versions of the data that had mean imputation vs. knn imputation applied, as well as with normalized vs. non-normalized features. It isn't necessary to normalize features for random forests,  but since I had already prepared normalized data for use in a neural network I tested it here as well to see how it would effect the random forest model performance. I tested each random forest model using all 27 environmental variables as features.
 
 \subsubsection{Deep Neural Network}
 
@@ -260,11 +232,37 @@ The last classification method that I wanted to use in my experiment was a deep 
 
 \subsection{Results}
 
-\subsubsection{KNN Results}
+\begin{figure}[H]
+\caption{Model Results}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{0.5em} % for the horizontal padding
+{\renewcommand{\arraystretch}{1.2}% for the vertical padding
+\begin{tabular}{ |l|r| }
+\hline
+Model Description & Top 30 error rate \\
+\hline
+ KNN with mean imputation & 90.3\% \\
+ KNN with knn imputation & 90.1\% \\  
+ KNN with knn impute and norm. & 92.5\% \\
+ KNN with mean imputatation and norm. & 90.9\% \\
+ \hline
+\textbf{Random Forest with mean imputation} & \textbf{77.4\%} \\
+ Random Forest with knn imputation & 79.2\% \\  
+ Random Forest with knn impute and norm. & 85.3\% \\
+ Random Forest with mean imputatation and norm. & 93.2\% \\
+ \hline
+\end{tabular}
+}
+\end{figure}
 
-\subsubsection{Random Forests Results}
+Random forests had the best performance overall, when using data that was not normalized and missing values imputed with the mean. After reviewing the literature I had expected random forests to be the best performing model, since it has been widely applied for the purposes of species distribution modeling, and recently has been found to work well with modeling rare classes. I also want to talk about the effect of the different imputation methods on the results for both models.
 
-\subsubsection{Comparison}
+For KNN, knn imputation only lowered the error rate by 0.2\% compared to mean imputation, while for Random Forests it actually increased the error rate by 1.8\%. I was surprised to see that the more sophisticated imputation method was outperformed by mean imputation, but I have some thoughts as to why this occurred. Missing data in this data set is highly correlated among variables, so if an observation is missing data at all, it is either missing all bio-climatic variables, all soil variables, or a very small chance of missing all environmental variables. So when knn imputation is applied, an observation with missing data has very limited features to compare neighbors with - which I think is leading to poor performance of this imputer. This imputer is likely finding poor fitting neighbors for observations with missing features.
+
+In my testing, KNN took significant tuning to surpass the simple baseline of the top-30 most present species. I think that the main reason for poor performance of this model with this specific dataset has to do with the fact that the data set is not only heavily imbalanced, but that a third of the classes have 10 observations or less. Because of this, I think it is likely that many of the minority classes have more observations from other classes nearby in the feature space than observations from their own class. So while KNN was able to slightly surpass the simple baseline, it doesn't seem that KNN is a good choice of model for species distribution modeling when the data set contains many rare classes.
+
+
 
 \subsection{Limitations}
 
@@ -275,7 +273,7 @@ The last classification method that I wanted to use in my experiment was a deep 
 
 \begin{normalsize}
 
-I would like to thank the contributors and maintainers of the GeoLifeCLEF Github repository: Maxi Miliense, Titouan Lorieul, Benjamin Deneu, Chris Botella, and Elijah Cole. This repository contains open source Python code that was designed for GeoLifeCLEF Kaggle challenge competitors, specifically for loading, plotting, and submitting the data provided in the competition. This code was especially useful for me to get up and running quickly with loading and visualizing the data, so I could move on to transforming the data and running models. I used the provided python functions for spatially plotting data, and generating the competition submission files. I would also like to thank Temple's CIS 4523/5523 Professor Zoran Obradovic and teaching assistant Marija Stanojevic for providing valuable feedback on this project during project presentations.
+I would like to thank the contributors and maintainers of the GeoLifeCLEF Github repository: Maxi Miliense, Titouan Lorieul, Benjamin Deneu, Chris Botella, and Elijah Cole. This repository contains open source Python code that was designed for GeoLifeCLEF Kaggle challenge competitors, specifically for loading, plotting, and submitting the data provided in the competition. This code was especially useful for me to get up and running quickly with loading and visualizing the data, so I could move on to transforming the data and running models. I used the provided Python functions for spatially plotting data, and generating the competition submission files. I would also like to thank Temple's CIS 4523/5523 Professor Zoran Obradovic and teaching assistant Marija Stanojevic for providing valuable feedback on this project during project presentations.
 
 \end{normalsize}
 
